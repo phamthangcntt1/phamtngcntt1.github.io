@@ -1,0 +1,35 @@
+*{
+	box-sizing: border-box;
+}
+.wrap{
+	max-width:1000px;
+	margin:auto;
+}
+#baner img{
+	width:100%;
+}
+img{
+	width:77%;
+}
+.div{
+	float:left;
+	width:50%;
+	margin-top:20px ;
+	padding-left:87px;
+}
+#main-menu a{
+	text-decoration:none;
+	font-size:20px;
+	text-align:center;
+
+
+}
+#main-menu a:hover{
+	color:red;
+
+}
+#main-menu {
+
+    margin-left: 105px;
+    margin-top: 20px;
+}
