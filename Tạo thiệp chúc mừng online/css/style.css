@@ -1,0 +1,56 @@
+
+#wrap{
+  text-align: center;
+  font-size: 40px;
+  color: yellow;
+  font-size: 40px;
+  font-weight: bold;
+  width: 1000px;
+  margin: auto;
+}
+canvas {
+    height: 112%;
+    width: 59%;
+    margin: auto;
+    position: absolute;
+    top: 199px;
+    left: 350px;  
+}
+img{
+  width:100%;
+  border-radius:25px;
+  
+}
+
+.title{
+    top: 305px;
+    left: 24px;
+    position: relative;
+}
+.title h2{
+
+    position: absolute;
+    top: 67px;
+    left: 602px;
+}
+@keyframes title {
+    0%  {color: #EF7126; color: black;}
+    25%  {color: #6F3662; color: purple;}
+    50%  {color: #9F6164; color: blue;}
+    75%  {color: #44B3C2; color: green;}
+    100% {color: #218C8D; color: yellow;}
+}
+
+h1 {
+  animation: title 5s ease infinite;
+}
+h2 {
+  animation: title1 5s ease infinite;
+}
+@keyframes title1 {
+    0%  {color: #EF7126; color: #607d8b;}
+    25%  {color: #6F3662; color: #800931;}
+    50%  {color: #9F6164; color: #6b750a;}
+    75%  {color: #44B3C2; color: #244d6d;}
+    100% {color: #218C8D; color: #943213;}
+}
