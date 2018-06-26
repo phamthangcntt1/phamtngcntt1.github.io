@@ -1,88 +1,56 @@
-*{
-	box-sizing: border-box;
+
+#wrap{
+  text-align: center;
+  font-size: 40px;
+  color: yellow;
+  font-size: 40px;
+  font-weight: bold;
+  width: 1000px;
+  margin: auto;
 }
-.wrap{
-    max-width: 1000px;
+canvas {
+    height: 112%;
+    width: 59%;
     margin: auto;
-    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
-    border-left: 1px solid #ddd;
-
-}
-#baner img{
-	width: 100%;
     position: absolute;
-    left: 45px;
+    top: 199px;
+    left: 350px;  
 }
-#baner {
+img{
+  width:100%;
+  border-radius:25px;
+  
+}
 
-    width: 80%;
+.title{
+    top: 305px;
+    left: 24px;
     position: relative;
-    top: 1px;
-    right: -151px;
 }
-#baner img{
-	height: 100%;
-	position: relative;
-}
-.div{
-	float:left;
-	width:50%;
-	margin-top:20px ;
-	padding-left:87px;
-}
-#main-menu{
-    position: relative;
-    width: 18%;
-    /* height: 236px; */
-    height: 13%;
-    border-left: 1px solid #ddd;
-    top: -233px;
-    left: -1px;
+.title h2{
 
-}
-#main-menu ul{
-    width: 100%;
-    background: #fff;
-    list-style-type: none;
     position: absolute;
-    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
-    
+    top: 67px;
+    left: 602px;
 }
-#main-menu ul li a{
-    text-decoration: none;
-    padding-left: 46px;
+@keyframes title {
+    0%  {color: #EF7126; color: black;}
+    25%  {color: #6F3662; color: purple;}
+    50%  {color: #9F6164; color: blue;}
+    75%  {color: #44B3C2; color: green;}
+    100% {color: #218C8D; color: yellow;}
 }
-#main-menu ul li {
 
-	border-bottom: 2px solid green;
-    margin-left: -38px;
-    height: 39px;
-    padding-top: 10px;
+h1 {
+  animation: title 5s ease infinite;
 }
-#main-content{
-	position: relative;
-    padding-left: 191px;
-    margin-top: 8px;
-
+h2 {
+  animation: title1 5s ease infinite;
 }
-.footer {
-    width: 100%;
-    height: 3%;
-    top: 1810px;
-    background-color: #9c7575;
-    color: white;
-    text-align: center;
-    margin: auto;
-    padding-top: 1px;
-}
-.back{
-    text-align: center;
-    font-size: 47px;
-    position: fixed;
-    top: 774px;
-    right: 102px;
-
-}
-.clear{
-	clear:both;
+@keyframes title1 {
+    0%  {color: #EF7126; color: #607d8b;}
+    25%  {color: #6F3662; color: #800931;}
+    50%  {color: #9F6164; color: #6b750a;}
+    75%  {color: #44B3C2; color: #244d6d;}
+    100% {color: #218C8D; color: #943213;}
 }
