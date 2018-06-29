@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+#wrap{
+    max-width: 990px;
+    margin: auto;
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
+    border-left: 1px solid #ddd;
+    font-family: 'Open Sans', sans-serif;
+
+}
+#head img{
+    width: 100%;
+    margin-left: 0px;
+}
+.menu{
+    width: 100%;
+    margin-top: 0;
+    height: 49px;
+}
+.menu ul{
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    margin-left: -24px;
+
+}
+.menu ul li{
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
+    border-left: 1px solid #ddd;
+    margin-top: -10px;
+    float: left;
+    height: 49px;
+    /* margin-left: 77px; */
+    width: 20%;
+}
+.menu ul li a{
+    width: 100%;
+    height: 48px;
+    margin-left: 1px;
+    text-decoration: none;
+    font-size: 21px;
+    margin-top: 0px;
+    display: block;
+    padding-top: 10px;
+    padding-left: 43px;
+}
+.clear{
+    clear:both;
+}
+.menu ul li:hover a{
+background-color: yellow;
+}
+.menu ul li ul li:hover a{
+    background-color: red;
+}
+.menu ul li ul li a{
+    padding-left: 22px;
+}
+.menu ul li ul {
+    height: 151px;
+    position: absolute;
+    top: 316px;
+    width: 16%;
+    margin-left: -25px;
+    display: none;
+    z-index: 3
+}
+.menu ul li ul li{
+    /* height: 57px; */
+    /* border-right: 1px solid #ddd; */
+    border-bottom: 2px solid black;
+    /* border-left: 1px solid #ddd; */
+    margin-top: 0px;
+    margin-left: -15px;
+    width: 108%;
+}
+.menu ul li:hover ul{
+    display: block;
+
+}
+
+h1{
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
+    /* border-left: 1px solid #ddd; */
+    color: blue;
+    text-align: center;
+    /* display: block; */
+    height: 51px;
+    padding-top: 5px;
+    width:100%;
+    z-index: 2;
+
+}
+.content-sub1 img{
+    margin-top: 7px;
+    margin-left: 156px;
+}
+.content-sub1 h2{
+    font-size: 34px;
+}
+.content-sub11 h1{
+    position: relative;
+}
+ p{
+    margin-top: 7px;
+    margin-left: 108px;
+    /* text-align: center; */
+    width: 78%;
+    font-size: 20px;
+    padding-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    text-align:center;
+}
+.fa-phone{
+    font-size: 41px;
+    top: 4px;
+    right: 266px;
+    color: green;
+    position: absolute;
+}
+.content-sub11{
+    position: relative;
+}
