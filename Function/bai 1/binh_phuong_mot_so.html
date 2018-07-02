@@ -1,0 +1,54 @@
+<script type="text/javascript">
+	function tinhbp(a,b,c){
+		alert("Kết quả tính bình phương là:" + (a*a)); 
+		alert("Kết quả tính bình phương của tổng là:" + (((3*a)+(2*b)-c)*((3*a)+(2*b)-c))); 
+	}
+	function catchuoi(){
+		var a="Cho 1 chuỗi dài hơn 30 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu ... ở cuối chuỗi.";
+		var kq=a.slice(0, 10) +"...";
+		alert("Chuỗi sau khi cắt là: " + kq);
+	}
+
+	function viethoa() 
+	{
+		var string="welcome to Techmaster";
+	    alert ("Kết quả biến 1 chuỗi thành viết hoa từ đầu tiên la:  " + string.charAt(0).toUpperCase() + string.slice(1));
+	}
+	function min_array(){
+		var  numbers = [1, 2 , 3 , 4 , 5 , 6 , 7,8]; 
+
+		var minInNumbers = Math.min.apply(Math, numbers);
+		document.write("Giá trị nhỏ nhất là " +minInNumbers+ "<br/>");
+			}
+	function sapxep(){
+			var ten = ["Sáng", "Tiến", "Ban", "Dũng"];
+    			alert("Kết Quả Tên Sắp Xếp Theo Thứ Tự Bảng Chữ Cái Là " + ten.sort());
+	}
+	
+  var teacher = {
+	  firstName: "Kim",
+	  lastName: "Dung",
+	  age: 30,
+	  say: function(){
+	  }
+	}
+	var student  = {
+	  firstName: "Dương",
+	  lastName: "Quá",
+	  age: 23,
+	  say: function(){
+	  }
+	}
+	var parent = {
+	  firstName: "Quách",
+	  lastName: "Tĩnh",
+	  age: 50,
+	  say: function(){
+	  }
+	}
+	var aboutMe = function(){
+		alert("Xin Chào Tôi Tên Là"  + this.firstName + this.lastName + "Năm Nay Tôi" + this.age + "Tuổi");
+	}
+	teacher.say=aboutMe;
+	return teacher.say;
+</script>
