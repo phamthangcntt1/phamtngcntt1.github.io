@@ -31,6 +31,7 @@
     height: 49px;
     /* margin-left: 77px; */
     width: 20%;
+    position: relative;
 }
 .menu ul li a{
 
@@ -57,11 +58,12 @@ background-color: yellow;
     padding-left: 22px;
 }
 .menu ul li ul {
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
     height: 151px;
     position: absolute;
-    top: 316px;
-    width: 16%;
-    margin-left: -25px;
+    top: 49px;
+    width: 113%;
+    margin-left: -26px;
     display: none;
 }
 .menu ul li ul li{
@@ -131,4 +133,7 @@ img{
 }
 h2{
     text-align:center;
+}
+ a{
+    text-decoration:none;
 }

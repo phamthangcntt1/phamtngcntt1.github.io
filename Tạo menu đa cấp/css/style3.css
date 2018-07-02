@@ -6,7 +6,6 @@
     margin: auto;
     box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
     border-left: 1px solid #ddd;
-    font-family: 'Open Sans', sans-serif;
 }
 #head img{
     width: 100%;
@@ -32,17 +31,19 @@
     height: 49px;
     /* margin-left: 77px; */
     width: 20%;
+    position: relative;
 }
 .menu ul li a{
-    width: 100%;
+
+    padding-left: 44px;
+    /* width: 186px; */
     height: 48px;
     margin-left: 1px;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 23px;
     margin-top: 0px;
     display: block;
     padding-top: 10px;
-    padding-left: 43px;
 }
 .clear{
     clear:both;
@@ -57,13 +58,13 @@ background-color: yellow;
     padding-left: 22px;
 }
 .menu ul li ul {
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
     height: 151px;
     position: absolute;
-    top: 316px;
-    width: 16%;
-    margin-left: -27px;
+    top: 49px;
+    width: 113%;
+    margin-left: -26px;
     display: none;
-    z-index: 3;
 }
 .menu ul li ul li{
     /* height: 57px; */
@@ -98,7 +99,7 @@ h1{
     float: left;
 }
 .content-sub1{
- position: relative;
+
 }
 .content-sub1 h2{
     font-size: 34px;

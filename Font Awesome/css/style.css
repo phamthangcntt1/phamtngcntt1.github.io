@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+#wrap{
+    max-width: 990px;
+    margin: auto;
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
+    border-left: 1px solid #ddd;
+    font-family: 'Andika', sans-serif; 
+}
+
+.head img{
+    width: 100%;
+    margin-left: 0px;
+}
+.menu{
+    width: 100%;
+    margin-top: 0;
+    height: 49px;
+}
+.menu ul{
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    margin-left: -24px;
+
+}
+.menu ul li{
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
+    border-left: 1px solid #ddd;
+    margin-top: -10px;
+    float: left;
+    height: 49px;
+    /* margin-left: 77px; */
+    width: 20%;
+    position: relative;
+}
+.menu ul li a{
+
+    padding-left: 44px;
+    /* width: 186px; */
+    height: 48px;
+    margin-left: 1px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 0px;
+    display: block;
+    padding-top: 10px;
+}
+.clear{
+    clear:both;
+}
+.menu ul li:hover a{
+background-color: yellow;
+}
+.menu ul li ul li:hover a{
+    background-color: red;
+}
+.menu ul li ul li a{
+    padding-left: 22px;
+}
+.menu ul li ul {
+    height: 151px;
+    position: absolute;
+    top: 49px;
+    width: 215px;
+    margin-left: -25px;
+    display: none;
+    z-index: 3;
+}
+.menu ul li ul li{
+    /* height: 57px; */
+    /* border-right: 1px solid #ddd; */
+    border-bottom: 2px solid black;
+    /* border-left: 1px solid #ddd; */
+    margin-top: 0px;
+    margin-left: -15px;
+    width: 108%;
+
+}
+.menu ul li:hover ul{
+    display: block;
+
+}
+
+h1{
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
+    border-left: 1px solid #ddd;
+    color: blue;
+    text-align: center;
+    /* display: block; */
+    height: 51px;
+    padding-top: 6px;
+    width:100%;
+    /* position: relative; */
+    /* margin-top: 21px; */
+
+}
+.content-sub11{
+    width:33%;
+    float:left;
+    transition: all 0.5s ease;
+}
+.content-sub11 img{
+    transition: all 0.5s linear;
+}
+.content-sub11:hover img{
+    transform:translate(0,-5px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+img{
+    width: 88%;
+    margin-left:18px;
+}
+.content-sub21 img{
+    transition: all 0.5s linear;
+}
+.content-sub21{
+    transition: all 0.5s ease;
+    width:33%;
+    float:left;
+    overflow:hidden;
+}
+.content-sub21:hover img{
+    transform: scale(1.2);
+    opacity:0.8;
+
+}
+#footer{
+    width: 100%;
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
+    border-left: 1px solid #ddd;
+    height: 73px;
+
+}
+h2{
+    text-align:center;
+}
+ a{
+    text-decoration:none;
+}
+.menu>.menu1{
+    position: relative;
+}
+.menu3.menu-sub{
+    position: absolute;
+}

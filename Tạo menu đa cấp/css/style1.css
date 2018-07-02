@@ -6,8 +6,6 @@
     margin: auto;
     box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
     border-left: 1px solid #ddd;
-    font-family: 'Open Sans', sans-serif;
-
 }
 #head img{
     width: 100%;
@@ -33,17 +31,19 @@
     height: 49px;
     /* margin-left: 77px; */
     width: 20%;
+    position: relative;
 }
 .menu ul li a{
-    width: 100%;
+
+    padding-left: 44px;
+    /* width: 186px; */
     height: 48px;
     margin-left: 1px;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 23px;
     margin-top: 0px;
     display: block;
     padding-top: 10px;
-    padding-left: 43px;
 }
 .clear{
     clear:both;
@@ -58,13 +58,13 @@ background-color: yellow;
     padding-left: 22px;
 }
 .menu ul li ul {
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,.2);
     height: 151px;
     position: absolute;
-    top: 316px;
-    width: 16%;
-    margin-left: -25px;
+    top: 49px;
+    width: 113%;
+    margin-left: -26px;
     display: none;
-    z-index: 3
 }
 .menu ul li ul li{
     /* height: 57px; */
@@ -89,7 +89,6 @@ h1{
     height: 51px;
     padding-top: 5px;
     width:100%;
-    z-index: 2;
 
 }
 .content-sub1 img{
@@ -99,29 +98,14 @@ h1{
 .content-sub1 h2{
     font-size: 34px;
 }
-.content-sub11 h1{
-    position: relative;
-}
- p{
+.content-sub1 p{
     margin-top: 7px;
-    margin-left: 108px;
+    margin-left: 156px;
     /* text-align: center; */
     width: 78%;
     font-size: 20px;
-    padding-top: 8px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 h2{
     text-align:center;
-}
-.fa-phone{
-    font-size: 41px;
-    top: 4px;
-    right: 266px;
-    color: green;
-    position: absolute;
-}
-.content-sub11{
-    position: relative;
 }
