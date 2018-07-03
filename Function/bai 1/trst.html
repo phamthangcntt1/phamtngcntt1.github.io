@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var teacher = {
+		  firstName: "Kim",
+		  lastName: "Dung",
+		  age: 30,
+		  say: function(){
+		  }
+		};
+		var student  = {
+		  firstName: "Dương",
+		  lastName: "Quá",
+		  age: 23,
+		  say: function(){
+		  }
+		};
+		var parent = {
+		  firstName: "Quách",
+		  lastName: "Tĩnh",
+		  age: 50,
+		  say: function(){
+		  }
+		};
+		var aboutMe = function(){
+			alert("Xin Chào Tôi Tên Là"  + this.firstName + this.lastName + "Năm Nay Tôi" + this.age + "Tuổi");
+		};
+		teacher.say=aboutMe;
+		console.log(teacher.say()) ;
+	</script>
+	
+</body>
+</html>
