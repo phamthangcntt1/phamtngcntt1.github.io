@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Sử dụng câu lệnh if để viết 1 hàm với 2 tham số bất kỳ, kiểm tra xem 2 tham số có phải là number không và tìm ra số lớn nhất trong 2 số đó.
+		function solonnhat(a,b){
+				document.write("Số a là kiểu " + typeof a + "<br/>");
+				document.write("Số b là kiểu " + typeof b + "<br/>");
+				if(a>b){
+					document.write("Số lớn nhất là" + a);
+				}
+				else if(b>a){
+					document.write( "Số Lớn nhất Là " + b);
+				}
+				else{
+					document.write("Hai số  a và b bằng nhau ");
+				}
+			}
+		//Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên dương (số Integer > 0), sau đó tính giai thừa và in ra kết quả.
+		function giaithua(a){
+				var b
+				if(a==0 || a==1){
+					return 1;
+				}
+				else{
+					for(var i=2; i<a;i++){
+						b*=i;
+						return
+					}
+				}
+			}
+
+	</script>
+</body>
+</html>
