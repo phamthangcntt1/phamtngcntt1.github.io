@@ -5,6 +5,7 @@
 </head>
 <body>
 	<script type="text/javascript">
+		// Viết hàm tính n giai thừa (n!)
 		function tinhgiaithua(b){
 			var i;
 			var a=1;
@@ -14,8 +15,48 @@
 			}
 			return a;
 		}
-		function daochuoi(){
-			var string="hãy viết hàm đảo ngược chuỗi đó";
+		//Cho 1 chuỗi, hãy viết hàm đảo ngược chuỗi đó. 
+		function daochuoi(s) {
+		    var o = ' ';
+		    for (var i = s.length - 1; i >= 0; i--)
+		        o += s[i];
+		    return o;
+		}
+		//Cho 1 chuỗi số, hãy viết hàm duplicate() có tác dụng sao chép chuỗi số lên 10 lần
+		function duplicate(){
+			for(var i=1; i<=10;i++){
+				document.write("-" + "123");
+			}
+		}
+		//Cho 1 mảng tên của n học viên. Viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên kèm theo số thứ tự
+		var mang=["Orange", "Mango", "Banana", "Apple"]
+
+		 function sapxep(){
+		 	mang.sort();
+			for(var i=0; i<mang.length;i++){
+				
+				document.write("<p>"+ i + "  " + mang[i] + "</p>" );
+			}
+		}
+		//Cho 1 mảng các số. Viết function tăng gấp đôi giá trị của các số trong mảng.
+		var mang=[1,2,3];
+		function nhandoi(){
+			for(var i=0;i<mang.length;i++){
+				s=mang[i];
+				b=s*2;
+				document.write(b);
+			}
+		}
+		//Cho 1 mảng các số. Viết function tạo ra 1 mảng mới với các số là số dư tương ứng khi chia các số trong mảng cũ cho 2.
+		var mang=[1,2,3,4,5,6,7,8,9,10];
+		function sodu(){
+			
+			for(i=0;i<mang.length;i++){
+				s=mang[i];
+				if(s%2!=0){
+					document.write(mang[i]);
+				}
+			}
 		}
 	</script>
 </body>
