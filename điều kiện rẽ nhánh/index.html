@@ -44,14 +44,32 @@
 		    }
 		}
 		//Bài 3. Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.
+		// function sapxepmang(a){
+		// 	var even = function (num) {
+		// 		return num % 2 === 0;
+		// 		};
+		// 	var myEvenArray = a.filter(even);
+
+		// 	var kq=	myEvenArray.sort(function(a, b){return b - a});
+		// 		alert(kq) ;
+		// }
 		function sapxepmang(a){
-			var even = function (num) {
+			var even = function(num) {
 				return num % 2 === 0;
 				};
-			var myEvenArray = a.filter(even);
+			var EvenArray = a.filter(even);
+			if(EvenArray.length>0){
+				
+				var kq=	EvenArray.sort(function(a, b){return b - a});
+				alert("Số chẵn trong mảng là: " + kq) ;
+				
+			}
+			else{
 
-			var kq=	myEvenArray.sort(function(a, b){return b - a});
-				alert(kq) ;
+				alert("Trong mảng không có số nào chẵn");
+			}
+			
+			
 		}
 		// Bài 4. Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào.
 		function validateForm()
@@ -64,17 +82,24 @@
 		    if (username == ''){
 		        alert('Bạn chưa nhập tên đăng nhập');
 		    }
-		    else if (password == ''&& str.length<=20 )
+		    else if(username.length > 20){
+		    	alert("Bạn Nhập quá 20 ký tự");
+		    }
+		    else if (password == '')
 		    {
 		        alert('Bạn chưa nhập mật khẩu');
 		    }
-		    else if (password == ''&& str.length<=20 )
-		    {
-		        alert('Bạn chưa nhập mật khẩu');
+
+		    else if(password.length>6){
+		    	alert("Bạn Nhập quá 6 ký tự");
 		    }
 		     else if (repassword == '')
 		    {
 		        alert('Bạn chưa nhập lại mật khẩu');
+		    }
+		    else if (repassword !== password)
+		    {
+		        alert('Mật khẩu nhập vào không khớp');
 		    }
 		    else{
 		        alert('Dữ liệu hợp lệ, ta có thể chấp nhận submit form');
