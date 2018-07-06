@@ -134,22 +134,15 @@
 		}
 		//Bài 6. Chỉ sử dụng while hoặc for, hãy viết function in ra màn hình các số từ 1 đến 100. Với điều kiện những giá trị là chẵn sẽ có màu xanh, giá trị lẻ có màu đỏ.
 		function inramanhinh(){
-			for(var i=1;i<=100;i++){
+			for(var i=1;i<=100;i++)
 				if(i%2==0){
-					color: blue;
+					document.write("<p style = 'color: red;display:inline'>" + i  + "</p>");
 				}
 				else{
-					color: red;
+					document.write("<p style = 'color: green;display:inline'>" + i  + "</p>");
 				}
-			}
-		}
-		function checkRGB(rgbText){
-  let matchColors = /^rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)$/;
-  let matchRGB = matchColors.exec(rgbText);
-  if(matchRGB != null && (matchRGB[1] > 255 || matchRGB[2] > 255 || matchRGB[3] > 255)) matchRGB = null;
-  return matchRGB;
-}
 
+		}
 	</script>
 </body>
 </html>
