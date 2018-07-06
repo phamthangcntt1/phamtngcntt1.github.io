@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập vẽ hình</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Viết funciton printTrigangle(n), với n là số integer > 2, in ra màn hình 1 hình tam giác vuông cân có kích thước n
+	function printTrigangle(n){
+		if(n>2 && Number.isInteger(n)){
+			for(var i=1;i<=n;i++){
+				var str="";
+				for(var j=1;j<=i;j++){
+					str+=" *  ";
+				}
+				document.write( "<pre>" + str + "</pre>");	
+			}
+		}
+		else{
+			document.write("Số bạn nhập vào không hợp lệ");
+		}
+	}
+//Bài 2. Viết function printEmptyRectangle(a, b), với a và b là 2 số integer > 3, in ra một hình chữ nhật rỗng có kích thước a x b.
+
+	function printEmptyRectangle(a,b){
+  if ( Number.isInteger(a) || a<=3 || Number.isInteger(b) || b<=3 ) {
+  	for (var i=1;i<=b;i++){
+	    if (i==1||i==b){
+	      var str="";
+	      for (var j=1; j<=a;j++) str=str+"  *";
+	      document.write("<pre>" + str + "</pre>");
+	      continue;
+	    }
+	    var str="";
+	    for (var j=1; j<=a;j++) {
+	      if (j==1||j==a) str+="  *";
+	      else str+="   ";
+	    }
+	    document.write("<pre>" + str + "</pre>");
+	}
+  }
+  else{
+  	alert("Số bạn nhập vào không hợp lệ");
+  }
+  	
+  
+  }
+  // Viết function printSpecialTrigangle(n), với n là số integer > 1, in ra hình tam giác cân ngược với chiều cao bằng n. 
+  
+		function printSpecial(n) {
+		var str = "";
+		if (n > 1 && Number.isInteger(n)){
+		for (i=0;i < n;i++) {
+		   for (j=0; j< 2*n-1; j++){
+		     if( j >= i && j<=2*(n-1)-i){
+		      str += '* ';
+		     }
+		     else {
+		       str += '&nbsp; &nbsp;';
+		     } 
+		   }           
+		   str += "<br>"; 
+		}
+		}
+		else {
+		str += "Bạn nhập số không hợp lệ <br>"; 
+		}
+		return str;
+		}
+// Viết function printX(n), với n là số integer > 3 và là số lẻ, in ra hình chữ X có chiều cao bằng n. 
+
+</script>
+</body>
+</html>
