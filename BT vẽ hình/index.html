@@ -68,6 +68,52 @@
 		return str;
 		}
 // Viết function printX(n), với n là số integer > 3 và là số lẻ, in ra hình chữ X có chiều cao bằng n. 
+	function printX(n) {
+	  var str = "";
+	  if (n >= 3 && n%2 !== 0 ) {    
+	    for (i=0; i<n; i++) {            
+	       for (j=0; j<n; j++){    
+	         if( j == i || j == n-1-i){
+	          str += '* ';
+	         }
+	         else {
+	           str += '&nbsp; &nbsp;';
+	         }
+	       }
+	       str += "<br>";
+	    }
+	  }
+	  else {
+	     str += "Số bạn nhập vào không hợp lệ"; 
+	  }
+	  return str;
+	}
+
+//Viết function printButterfly(n), với n là số integer > 3 và là số lẻ, in ra hình con bướm có chiều cao bằng n.
+	function printButterfly(n) {
+	  var str = "";
+	  if (n >= 3 && n%2 !== 0 ) {    
+	     for (i=0;i<n;i++) { 
+	       for (j=0; j<n; j++){ 
+	         if( i<=(n-1)/2 && (j <= i || j >= n-1-i)){
+	            str += '* ';
+	         } 
+	         else if (i>(n-1)/2 && (j>=i || j <= n-1-i)){
+	            str += '* ';           
+	         }
+	         else {
+	           str += '&nbsp; &nbsp;';
+	         }
+	       }
+	       str += "<br>";
+	    }
+	  }
+	  else {
+	   str += "Số bạn nhập vào không hợp lệ"; 
+	  }
+	  return str;
+	}
+	document.write(printButterfly(5)+"<br>");
 
 </script>
 </body>
