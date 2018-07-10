@@ -2,26 +2,79 @@
 <html>
 <head>
 	<title>Document Object Model</title>
+	<meta charset="utf-8">
 	<style type="text/css">
 
 		#content{
 			max-width:1000px;
 			margin:auto;
-			background-color: gray;
 			border:2px solid black;
 		}
 	</style>
-	<script type="text/javascript">
-		function changeFontSize(x){
-			document.getElementById('content').style.fontSize='x px';
-		}
-	</script>
+	
 </head>
 <body>
-	<div id="content">
-		<div class="div1"><p>Đây Là Đoạn Văn 1</p></div>
-		<div class="div1"><p>Đây Là Đoạn Văn 2</p></div>
-		<div class="div1"><p></p>Đây Là Đoạn Văn 3</div>
+	<div id ="content">
+		<div id="p1" class="div1"><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+		</div>
+		<div id="p2" class="div1"><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+		</div>
+		<div id="p3" class="div1"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+		</div>
 	</div>
+
+	<script>
+		//function changeFontSize(x): Thay đổi kích thước font chữ của cả 3 đoạn văn thành x pixels (x là một số nguyên).
+		function changeFontSize(x){
+			var a= document.getElementsByClassName("div1");
+			for(var i=0;i<a.length;i++){
+				a[i].style.fontSize= x + "px";
+			}		
+		}
+		changeFontSize(20);
+		//function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn (paragraph) lên 1 pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi hàm changeFontSize() hoặc dùng window.getComputedStyle).
+		function increaseFontSize(paragraph) {
+			var b = document.getElementById(paragraph);
+			var a = parseInt(b.style.fontSize);
+			if (a<30) {
+				b.style.fontSize = a + 1 +'px';
+			}
+			else {
+				document.write("Kích thước đang vượt quá 30px mời bạn thay đổi lại kích thước");		
+			}
+			
+		}
+		
+		//function decreaseFontSize(paragraph): Giảm kích thước font chữ của đoạn văn mong muốn (paragraph) xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels.		
+		function decreaseFontSize(paragraph) {
+			var b = document.getElementById(paragraph);
+			var a = parseInt(b.style.fontSize);
+			if (b>10) {
+				b.style.fontSize = a - 1 +'px';
+			}
+			else {
+				document.write("Kích thước đang nhỏ quá 10px mời bạn thay đổi lại kích thước");
+			}
+		}
+		//function changeColor(): Đổi màu chữ của 3 đoạn văn theo thứ tự xanh, vàng, đỏ.
+		function changeColor(){
+			var a=document.getElementsByClassName("div1");
+			a[0].style.color="blue";
+			a[1].style.color="yellow";
+			a[2].style.color="red";
+		}
+		//function changeBgColor(color): Thay đổi màu nền của trang thành màu color.
+		function changeBgColor(color){
+			var a=document.getElementById("content");
+			a.style.background=color;
+		}
+		//function copyContent(paragraph1, paragraph2): Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2.
+		function copyContent(paragraph1, paragraph2){
+			var a=document.getElementById(paragraph1);
+			var b=document.getElementById(paragraph2);
+			a.innerHTML=b.innerHTML;
+
+		}
+	</script>
 </body>
 </html>
